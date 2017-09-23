@@ -22,6 +22,16 @@ class Celular {
         $this->memoriaInterna = $memoriaInterna;
         $this->memoriaRAM = $memoriaRAM;
         $this->preco = $preco;
+    }    
+    
+    //Getters and Setters
+    
+    public function __set($propriedade, $value) {
+        $this->$propriedade = $value;
+    }
+    
+    public function __get($propriedade) {
+        return $this->$propriedade;
     }
     
 }
